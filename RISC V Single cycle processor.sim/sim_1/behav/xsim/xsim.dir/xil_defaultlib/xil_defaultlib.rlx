@@ -1,0 +1,6 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v,1731952542,verilog,,,,ALU_Control;Data_Memory;adder;adder4;alu_unit;and_logic;control_unit;immediate_gen;instruction_memory;mux1;mux2;mux3;program_counter;register_file;tb_top;top,,,,,,,,
