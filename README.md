@@ -1,6 +1,6 @@
 # RISC-V Processor Implementation in Verilog
 
-This repository contains a Verilog implementation of a simplified RISC-V processor. The design incorporates key components required for executing fundamental RISC-V instructions and simulating their behavior. The project focuses on modular design and verification through simulation.
+This is a Verilog implementation of a simplified RISC-V processor. The design incorporates key components required for executing fundamental RISC-V instructions and simulating their behavior. The project focuses on modular design and verification through simulation.
 
 ## Key Features
 - **Program Counter (PC)**: Manages the address of the current instruction.
