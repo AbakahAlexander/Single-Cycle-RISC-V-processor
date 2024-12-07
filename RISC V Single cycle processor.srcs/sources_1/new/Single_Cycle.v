@@ -15,7 +15,6 @@ program_counter PC(.clk(clk), .reset(reset), .pc_in(PCin_top), .pc_out(PC_top));
 //PC adder
 adder4 PC_adder(.frompc(PC_top), .nexttopc(nexttopc_top));
 
-
 //Instruction Memory
 instruction_memory Inst_Memory(.clk(clk), .reset(reset), .read_address(PC_top), .instruction(instruction_top));
 
