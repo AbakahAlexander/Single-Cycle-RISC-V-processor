@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.runs/synth_1/tb_top.tcl"
+  variable script "C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.runs/synth_1/tb_top.tcl"
   variable category "vivado_synth"
 }
 
@@ -56,26 +56,35 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 4
-set_param checkpoint.writeSynthRtdsInDcp 1
-set_param synth.incrementalSynthesisCache C:/Users/abaka/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-3012-Alexander/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a12tcpg238-3
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.cache/wt} [current_project]
-set_property parent.project_path {C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.xpr} [current_project]
+set_property webtalk.parent_dir {C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo {c:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.cache/ip} [current_project]
+set_property ip_output_repo {c:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib {{C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v}}
+read_verilog -library xil_defaultlib {
+  {C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v}
+  {C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/adder.v}
+  {C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/alu_control.v}
+  {C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/alu_unit.v}
+  {C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/and_logic.v}
+  {C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/control_unit.v}
+  {C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v}
+  {C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/immediate_generator.v}
+  {C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/instruction_memory.v}
+  {C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/multiplexers.v}
+  {C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/program_counter.v}
+  {C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/register_file.v}
+  {C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/test_bench.v}
+}
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -87,7 +96,7 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 }
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental {C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/utils_1/imports/synth_1/tb_top.dcp}
+read_checkpoint -auto_incremental -incremental {C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/utils_1/imports/synth_1/tb_top.dcp}
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

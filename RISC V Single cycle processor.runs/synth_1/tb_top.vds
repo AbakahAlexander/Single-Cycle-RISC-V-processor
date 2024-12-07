@@ -3,28 +3,28 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Mon Nov 18 09:57:50 2024
-# Process ID: 30168
-# Current directory: C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.runs/synth_1
+# Start of session at: Sat Dec  7 10:27:05 2024
+# Process ID: 9740
+# Current directory: C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.runs/synth_1
 # Command line: vivado.exe -log tb_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tb_top.tcl
-# Log file: C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.runs/synth_1/tb_top.vds
-# Journal file: C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.runs/synth_1\vivado.jou
+# Log file: C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.runs/synth_1/tb_top.vds
+# Journal file: C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.runs/synth_1\vivado.jou
 # Running On        :Alexander
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :26100
 # Processor Detail  :13th Gen Intel(R) Core(TM) i7-13620H
-# CPU Frequency     :2918 MHz
+# CPU Frequency     :2919 MHz
 # CPU Physical cores:10
 # CPU Logical cores :16
 # Host memory       :16849 MB
 # Swap memory       :17179 MB
 # Total Virtual     :34029 MB
-# Available Virtual :8262 MB
+# Available Virtual :18356 MB
 #-----------------------------------------------------------
 source tb_top.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 533.469 ; gain = 202.309
-Command: read_checkpoint -auto_incremental -incremental {C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/utils_1/imports/synth_1/tb_top.dcp}
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/utils_1/imports/synth_1/tb_top.dcp for incremental synthesis
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 530.957 ; gain = 202.094
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/utils_1/imports/synth_1/tb_top.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/utils_1/imports/synth_1/tb_top.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top tb_top -part xc7a12tcpg238-3
 Starting synth_design
@@ -34,128 +34,128 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 32436
+INFO: [Synth 8-7075] Helper process launched with PID 19740
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 991.715 ; gain = 448.898
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 990.941 ; gain = 448.887
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'tb_top' [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:352]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:356]
-INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:297]
-INFO: [Synth 8-6157] synthesizing module 'program_counter' [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'program_counter' (0#1) [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:3]
-INFO: [Synth 8-6157] synthesizing module 'adder4' [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:22]
-INFO: [Synth 8-6155] done synthesizing module 'adder4' (0#1) [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:22]
-INFO: [Synth 8-6157] synthesizing module 'instruction_memory' [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:33]
-WARNING: [Synth 8-6090] variable 'I_mem' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:54]
-WARNING: [Synth 8-6090] variable 'I_mem' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:55]
-WARNING: [Synth 8-6090] variable 'I_mem' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:56]
-WARNING: [Synth 8-6090] variable 'I_mem' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:57]
-WARNING: [Synth 8-6090] variable 'I_mem' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:60]
-WARNING: [Synth 8-6090] variable 'I_mem' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:61]
-WARNING: [Synth 8-6090] variable 'I_mem' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:64]
-WARNING: [Synth 8-6090] variable 'I_mem' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:65]
-WARNING: [Synth 8-6090] variable 'I_mem' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:68]
-WARNING: [Synth 8-6090] variable 'I_mem' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:69]
-WARNING: [Synth 8-6090] variable 'I_mem' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:72]
-INFO: [Synth 8-6155] done synthesizing module 'instruction_memory' (0#1) [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:33]
-INFO: [Synth 8-6157] synthesizing module 'register_file' [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:78]
-INFO: [Synth 8-6155] done synthesizing module 'register_file' (0#1) [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:78]
-INFO: [Synth 8-6157] synthesizing module 'immediate_gen' [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:144]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:151]
-INFO: [Synth 8-6155] done synthesizing module 'immediate_gen' (0#1) [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:144]
-INFO: [Synth 8-6157] synthesizing module 'control_unit' [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:160]
-WARNING: [Synth 8-151] case item 7'b0110011 is unreachable [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:167]
-WARNING: [Synth 8-151] case item 7'b0110011 is unreachable [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:167]
-WARNING: [Synth 8-151] case item 7'b0110011 is unreachable [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:167]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:167]
-INFO: [Synth 8-6155] done synthesizing module 'control_unit' (0#1) [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:160]
-INFO: [Synth 8-6157] synthesizing module 'ALU_Control' [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:198]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:207]
-INFO: [Synth 8-6155] done synthesizing module 'ALU_Control' (0#1) [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:198]
-INFO: [Synth 8-6157] synthesizing module 'alu_unit' [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:179]
-WARNING: [Synth 8-151] case item 4'b0010 is unreachable [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:187]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:187]
-INFO: [Synth 8-6155] done synthesizing module 'alu_unit' (0#1) [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:179]
-INFO: [Synth 8-6157] synthesizing module 'mux1' [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:247]
-INFO: [Synth 8-6155] done synthesizing module 'mux1' (0#1) [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:247]
-INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:287]
-INFO: [Synth 8-6155] done synthesizing module 'adder' (0#1) [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:287]
-INFO: [Synth 8-6157] synthesizing module 'and_logic' [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:277]
-INFO: [Synth 8-6155] done synthesizing module 'and_logic' (0#1) [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:277]
-INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:257]
-INFO: [Synth 8-6155] done synthesizing module 'mux2' (0#1) [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:257]
-INFO: [Synth 8-6157] synthesizing module 'Data_Memory' [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:220]
-INFO: [Synth 8-6155] done synthesizing module 'Data_Memory' (0#1) [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:220]
-INFO: [Synth 8-6157] synthesizing module 'mux3' [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:267]
-INFO: [Synth 8-6155] done synthesizing module 'mux3' (0#1) [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:267]
-INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:297]
-WARNING: [Synth 8-85] always block has no event control specified [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:367]
-INFO: [Synth 8-6155] done synthesizing module 'tb_top' (0#1) [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:352]
-WARNING: [Synth 8-3848] Net instruction in module/entity instruction_memory does not have driver. [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:37]
-WARNING: [Synth 8-7137] Register D_Memory_reg[63] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[62] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[61] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[60] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[59] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[58] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[57] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[56] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[55] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[54] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[53] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[52] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[51] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[50] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[49] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[48] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[47] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[46] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[45] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[44] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[43] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[42] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[41] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[40] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[39] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[38] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[37] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[36] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[35] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[34] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[33] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[32] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[31] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[30] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[29] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[28] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[27] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[26] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[25] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[24] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[23] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[22] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[21] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[20] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[19] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[18] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[17] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[16] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[15] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[14] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[13] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[12] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[11] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[10] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[9] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[8] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[7] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[6] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[5] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[4] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[3] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[2] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[1] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
-WARNING: [Synth 8-7137] Register D_Memory_reg[0] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:233]
+INFO: [Synth 8-6157] synthesizing module 'tb_top' [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/test_bench.v:2]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/test_bench.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:4]
+INFO: [Synth 8-6157] synthesizing module 'program_counter' [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/program_counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'program_counter' (0#1) [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/program_counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'adder4' [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/program_counter.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'adder4' (0#1) [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/program_counter.v:22]
+INFO: [Synth 8-6157] synthesizing module 'instruction_memory' [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/instruction_memory.v:3]
+WARNING: [Synth 8-6090] variable 'I_mem' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/instruction_memory.v:24]
+WARNING: [Synth 8-6090] variable 'I_mem' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/instruction_memory.v:25]
+WARNING: [Synth 8-6090] variable 'I_mem' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/instruction_memory.v:26]
+WARNING: [Synth 8-6090] variable 'I_mem' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/instruction_memory.v:27]
+WARNING: [Synth 8-6090] variable 'I_mem' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/instruction_memory.v:30]
+WARNING: [Synth 8-6090] variable 'I_mem' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/instruction_memory.v:31]
+WARNING: [Synth 8-6090] variable 'I_mem' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/instruction_memory.v:34]
+WARNING: [Synth 8-6090] variable 'I_mem' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/instruction_memory.v:35]
+WARNING: [Synth 8-6090] variable 'I_mem' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/instruction_memory.v:38]
+WARNING: [Synth 8-6090] variable 'I_mem' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/instruction_memory.v:39]
+WARNING: [Synth 8-6090] variable 'I_mem' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/instruction_memory.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_memory' (0#1) [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/instruction_memory.v:3]
+INFO: [Synth 8-6157] synthesizing module 'register_file' [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/register_file.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'register_file' (0#1) [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/register_file.v:2]
+INFO: [Synth 8-6157] synthesizing module 'immediate_gen' [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/immediate_generator.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/immediate_generator.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'immediate_gen' (0#1) [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/immediate_generator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'control_unit' [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/control_unit.v:2]
+WARNING: [Synth 8-151] case item 7'b0110011 is unreachable [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/control_unit.v:9]
+WARNING: [Synth 8-151] case item 7'b0110011 is unreachable [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/control_unit.v:9]
+WARNING: [Synth 8-151] case item 7'b0110011 is unreachable [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/control_unit.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/control_unit.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'control_unit' (0#1) [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/control_unit.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ALU_Control' [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/alu_control.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/alu_control.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_Control' (0#1) [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/alu_control.v:3]
+INFO: [Synth 8-6157] synthesizing module 'alu_unit' [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/alu_unit.v:3]
+WARNING: [Synth 8-151] case item 4'b0010 is unreachable [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/alu_unit.v:11]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/alu_unit.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'alu_unit' (0#1) [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/alu_unit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux1' [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/multiplexers.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mux1' (0#1) [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/multiplexers.v:3]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/adder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (0#1) [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/adder.v:3]
+INFO: [Synth 8-6157] synthesizing module 'and_logic' [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/and_logic.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'and_logic' (0#1) [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/and_logic.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/multiplexers.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (0#1) [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/multiplexers.v:13]
+INFO: [Synth 8-6157] synthesizing module 'Data_Memory' [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Data_Memory' (0#1) [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux3' [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/multiplexers.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux3' (0#1) [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/multiplexers.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:4]
+WARNING: [Synth 8-85] always block has no event control specified [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/test_bench.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'tb_top' (0#1) [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/test_bench.v:2]
+WARNING: [Synth 8-3848] Net instruction in module/entity instruction_memory does not have driver. [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/instruction_memory.v:7]
+WARNING: [Synth 8-7137] Register D_Memory_reg[63] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[62] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[61] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[60] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[59] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[58] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[57] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[56] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[55] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[54] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[53] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[52] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[51] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[50] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[49] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[48] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[47] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[46] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[45] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[44] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[43] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[42] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[41] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[40] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[39] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[38] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[37] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[36] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[35] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[34] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[33] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[32] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[31] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[30] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[29] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[28] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[27] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[26] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[25] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[24] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[23] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[22] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[21] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[20] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[19] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[18] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[17] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[16] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[15] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[14] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[13] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[12] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[11] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[10] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[9] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[8] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[7] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[6] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[5] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[4] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[3] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[2] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[1] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
+WARNING: [Synth 8-7137] Register D_Memory_reg[0] in module Data_Memory has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/data_memory.v:16]
 WARNING: [Synth 8-7129] Port instruction[19] in module immediate_gen is either unconnected or has no load
 WARNING: [Synth 8-7129] Port instruction[18] in module immediate_gen is either unconnected or has no load
 WARNING: [Synth 8-7129] Port instruction[17] in module immediate_gen is either unconnected or has no load
@@ -258,29 +258,29 @@ WARNING: [Synth 8-7129] Port read_address[22] in module instruction_memory is ei
 WARNING: [Synth 8-7129] Port read_address[21] in module instruction_memory is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1122.449 ; gain = 579.633
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1121.910 ; gain = 579.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1122.449 ; gain = 579.633
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1121.910 ; gain = 579.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a12tcpg238-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1121.910 ; gain = 579.855
+---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a12tcpg238-3
----------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1122.449 ; gain = 579.633
----------------------------------------------------------------------------------
-WARNING: [Synth 8-327] inferring latch for variable 'ImmExt_reg' [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:152]
-WARNING: [Synth 8-327] inferring latch for variable 'Branch_reg' [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:168]
-WARNING: [Synth 8-327] inferring latch for variable 'ALUOp_reg' [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:168]
-WARNING: [Synth 8-327] inferring latch for variable 'RegWrite_reg' [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:168]
-WARNING: [Synth 8-327] inferring latch for variable 'Control_out_reg' [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:208]
-WARNING: [Synth 8-327] inferring latch for variable 'ALU_result_reg' [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:188]
-WARNING: [Synth 8-327] inferring latch for variable 'zero_reg' [C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.srcs/sources_1/new/Single_Cycle.v:188]
+WARNING: [Synth 8-327] inferring latch for variable 'ImmExt_reg' [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/immediate_generator.v:11]
+WARNING: [Synth 8-327] inferring latch for variable 'Branch_reg' [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/control_unit.v:10]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUOp_reg' [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/control_unit.v:10]
+WARNING: [Synth 8-327] inferring latch for variable 'RegWrite_reg' [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/control_unit.v:10]
+WARNING: [Synth 8-327] inferring latch for variable 'Control_out_reg' [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/alu_control.v:13]
+WARNING: [Synth 8-327] inferring latch for variable 'ALU_result_reg' [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/alu_unit.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'zero_reg' [C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.srcs/sources_1/new/alu_unit.v:12]
 INFO: [Device 21-9227] Part: xc7a12tcpg238-3 does not have CEAM library.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1298.191 ; gain = 755.375
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1300.086 ; gain = 758.031
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
@@ -317,20 +317,20 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1298.191 ; gain = 755.375
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1300.086 ; gain = 758.031
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1298.191 ; gain = 755.375
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1300.086 ; gain = 758.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1298.191 ; gain = 755.375
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1300.086 ; gain = 758.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -348,37 +348,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 1298.191 ; gain = 755.375
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1300.086 ; gain = 758.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 1298.191 ; gain = 755.375
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1300.086 ; gain = 758.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 1298.191 ; gain = 755.375
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1300.086 ; gain = 758.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 1298.191 ; gain = 755.375
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1300.086 ; gain = 758.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 1298.191 ; gain = 755.375
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1300.086 ; gain = 758.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 1298.191 ; gain = 755.375
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1300.086 ; gain = 758.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -403,16 +403,16 @@ Report Instance Areas:
 |1     |top      |       |     0|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 1298.191 ; gain = 755.375
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1300.086 ; gain = 758.031
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 211 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 1298.191 ; gain = 755.375
-Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 1298.191 ; gain = 755.375
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1300.086 ; gain = 758.031
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1300.086 ; gain = 758.031
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1298.191 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1300.086 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1378.406 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1384.965 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -420,7 +420,7 @@ Synth Design complete | Checksum: faecaca4
 INFO: [Common 17-83] Releasing license: Synthesis
 52 Infos, 190 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1378.406 ; gain = 840.902
-INFO: [Common 17-1381] The checkpoint 'C:/Users/abaka/RISC V Single cycle processor/RISC V Single cycle processor.runs/synth_1/tb_top.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1384.965 ; gain = 849.230
+INFO: [Common 17-1381] The checkpoint 'C:/Users/abaka/Single-Cycle-RISC-V-processor/RISC V Single cycle processor.runs/synth_1/tb_top.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file tb_top_utilization_synth.rpt -pb tb_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Nov 18 09:58:15 2024...
+INFO: [Common 17-206] Exiting Vivado at Sat Dec  7 10:27:30 2024...
